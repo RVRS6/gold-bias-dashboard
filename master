@@ -1,0 +1,5 @@
+gold-bias-dashboard/
+│
+├── app.py                   # Streamlit App
+├── requirements.txt         # Python-Abhängigkeiten
+└── data_sources.py          # Datenquellen (API, CoT etc.)
