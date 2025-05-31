@@ -5,6 +5,11 @@ from data_sources import *
 st.set_page_config(page_title="Gold Bias Dashboard", layout="wide")
 
 st.title("📊 Gold Bias Dashboard")
+gold_price = get_gold_price()
+if gold_price:
+    st.metric("Goldpreis (Spot)", f"${gold_price:,.2f}")
+else:
+    st.warning("Goldpreis konnte nicht geladen werden.")
 
 # Live-Werte
 col1, col2, col3 = st.columns(3)
