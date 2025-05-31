@@ -5,7 +5,7 @@ from data_sources import *
 import time
 
 # ⏱ Auto-Refresh alle 15 Minuten
-st.experimental_set_query_params(t=int(time.time()))
+st.query_params(t=int(time.time()))
 st.markdown(f"<meta http-equiv='refresh' content='900'>", unsafe_allow_html=True)
 
 # 🔘 Manueller Refresh
