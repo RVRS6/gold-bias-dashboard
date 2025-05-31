@@ -1,4 +1,5 @@
 import streamlit as st
+st.set_page_config(page_title="Gold Bias Dashboard", layout="wide")
 import plotly.graph_objs as go
 from data_sources import *
 import time
